@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIRAN Mentorship System</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script>
+      // Check if Socket.IO is loaded
+      window.addEventListener('load', () => {
+        console.log('Window loaded, checking for Socket.IO...');
+        if (window.io) {
+          console.log('Socket.IO is available:', window.io);
+        } else {
+          console.error('Socket.IO is not available');
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
